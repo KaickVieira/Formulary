@@ -1,2 +1,100 @@
-# Formulary
-Formulário para estudos
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+  <title>Cadastro da Liga dos Astronautas</title>
+  <style>
+      .box{
+          position: absolute;
+          top: 8%;
+          left: 35%;
+          background-color: rgba(2, 27, 95, 0.5);
+          padding: 5px;
+          border-radius:10px;
+          width: 25%;
+
+      }
+      fieldset{
+          border: px solid dodgerblue
+      }
+  </style>
+</head>
+<body>
+   <div class="box">
+    <h3>Cadastro da Liga dos Astronautas</h3>
+    <form action="">
+        <div>
+            <label for="primeiroNome">Nome:</label>
+            <input class="inputUser" type="text" id="name" name="name">
+        </div>
+        <br>
+        <div> 
+            <label for="email">Email:</label>
+            <input class="inputUser" type="email" id="email" name="email"> 
+        </div>
+        <br>
+        <div>
+        <label for="password">Password:</label>
+        <input class="inputUser" type="password" id="password" name="password"> 
+        </div>
+        <br>
+        <div>               
+            <label for="dataDeNascimento">Data de Nascimento:</label>
+            <input class="date" type="date" id="dataDeNascimento" name="dataDeNascimento">
+        </div>
+        <br>
+        <div>
+            <label for="foto">Foto:</label>
+            <input class="butom" type="file" id="foto" name="foto">
+        </div>
+        <br>
+        <div>
+            <label for="nacionalidade">Nacionalidade:</label>
+            <select id="nacionalidade" name="nacionalidade">
+                <option value="americano">Americano</option>
+                <option value="brasileiro">Brasileiro</option>
+                <option value="russo">Russo</option>
+            </select>    
+        </div>
+        <br>
+        <div>
+        Genero:
+        <label for="female">F</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="male">M</label>
+        <input type="radio" id="male" name="gender" value="male">
+        </div>
+        <br>
+        <div>
+            Suas Principais qualidades:
+            <br>
+            <br>
+            <label for="int">Inteligência</label>
+            <input type="checkbox" name="int" id="int">
+            <label for="resil">Resiliência</label>
+            <input type="checkbox" name="resil" id="resil">
+            <br>
+            <label for="physPrep">Preparo Físico</label>
+            <input type="checkbox" name="physPrep" id="physPrep">
+            <label for="education">Educação</label>
+            <input type="checkbox" name="education" id="education">
+       
+        </div>
+        <br>
+        <div>
+            <textarea class="texto" name="motivoSerAstronauta" id="motivoSerAstronauta"  cols="30" rows="10" placeholder="Porque você gostaria de ser um astronauta?"></textarea></p>
+        </div>
+        <br>
+        <div>
+            <input class="botao" type="submit" value="Criar">
+        </div>
+ 
+    </form>
+   </div>
+    </body>
+   
+</html>
